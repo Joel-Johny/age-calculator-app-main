@@ -15,22 +15,20 @@ body{
 }
 
 .container{
-    min-height:600px;
-    min-width:800px;
+    min-width:720px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     border-bottom-right-radius: 200px;
-    padding:3.5rem;
+    padding:3rem;
     margin: 1rem;
-
     display: flex;
     flex-direction: column;
     gap:3rem;
 }
 
 input{
-    height: 70px;
-    width: 145px;
+    height: 65px;
+    width: 150px;
     border-radius: 10px;
     text-indent: 1.05rem;
     font-size: 32px;
@@ -50,7 +48,18 @@ h4{
 }
 .inputs{
     display: flex;
-    gap:2.5rem;
+    gap:1.5rem;
+}
+
+.error{
+    color: hsl(0, 100%, 67%);
+    display: block;
+    margin-top: 6px;
+    font-style: italic ;
+    
+    font-family: sans-serif;
+    font-size: 14px;
+
 }
 /* HLINE */
 .partition{
@@ -58,7 +67,7 @@ h4{
 }
 .hLine{
     border:1px solid  hsl(0, 0%, 86%);
-    width:650px;
+    width:90%;
 }
 .image{
     height: 90px;
@@ -67,7 +76,7 @@ h4{
     border-radius: 50%;
     padding: 1.5rem;
     position: absolute;
-    right: 7px;
+    right: -15px;
     cursor: pointer;
     bottom: -42px;
 
@@ -92,6 +101,11 @@ h4{
     margin-top: -15px;
     margin-bottom: -15px;
 }
-span{
+.result span{
     color:hsl(259, 100%, 65%) ;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

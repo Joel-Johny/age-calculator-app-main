@@ -17,30 +17,35 @@
       <div class="inputs">
         <div>
           <h4>DAY</h4>
-          <input type="text" name="day" id="day" placeholder="DD">
+          <input type="number" name="day" id="day" placeholder="DD" min="1" max="31">
+          <span class="error e-day"></span>
         </div>
         <div >
           <h4>MONTH</h4>
-          <input type="text" name="month" id="month" placeholder="MM">
+          <input type="number" name="month" id="month" placeholder="MM" min="1" max="12">
+          <span class="error e-month"></span>
+
         </div>
         <div >
           <h4>YEAR</h4>
-          <input type="text" name="year" id="year" placeholder="YYYY">
+          <input type="number" name="year" id="year" placeholder="YYYY" min="1" max="9999">
+          <span class="error e-year"></span>
+
         </div>
       </div>
       <div class="partition">
         <hr class="hLine">
-        <img src="/assets/images/icon-arrow.svg" class="image"  />
+        <img src="/assets/images/icon-arrow.svg" class="image"  onclick="validate()"/>
       </div>
       <div class="result">
         <div class="years">
-          <h1><span id="resultYear">38</span> years</h1>
+          <h1><span id="resultYear">--</span> years</h1>
         </div>
         <div class="months">
-          <h1><span id="resultMonth">3</span> months</h1>
+          <h1><span id="resultMonth">--</span> months</h1>
         </div>
         <div class="days">
-          <h1><span id="resultDay">26</span> days</h1>
+          <h1><span id="resultDay">--</span> days</h1>
         </div>
       </div>
   </div>

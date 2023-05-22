@@ -15,7 +15,7 @@ body{
 }
 
 .container{
-    min-width:720px;
+    width:720px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     border-bottom-right-radius: 200px;
@@ -108,4 +108,38 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media screen and (max-width:750px) {
+
+    .container{
+        min-width: 380px;
+        gap:4.5rem;
+        margin: 1rem;
+        padding: 1.25rem;
+        border-bottom-right-radius: 130px;
+    }
+    input{
+        width: 110px;
+        text-indent: 0.5rem;
+    }
+    .inputs{
+        justify-content: center;
+    }
+    .hLine{
+        width: 100%;
+    }
+    .image{
+        height: 80px;
+        width: 80px;
+        right:40%;
+        bottom: -35px;
+    }
+    .years,.months,.days{
+        width: 100%;
+
+    }
+    .result{
+        font-size: 31px;
+    }
 }

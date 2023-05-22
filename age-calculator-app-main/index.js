@@ -19,7 +19,6 @@ function resetColor(){
         const input =childNode.children[1]
         heading.style.color="hsl(0, 1%, 44%)"
         input.style.borderColor="hsl(0, 0%, 86%)";
-        console.log(childNode,heading,input)
 
 
     });

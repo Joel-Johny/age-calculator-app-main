@@ -28,9 +28,9 @@ body{
 
 input{
     height: 65px;
-    width: 150px;
+    width: 140px;
     border-radius: 10px;
-    text-indent: 1.05rem;
+    text-align: center;
     font-size: 32px;
     color:hsl(0, 0%, 8%);
     margin-top: 0.4rem;
@@ -92,7 +92,7 @@ h4{
 .result{
     display: flex;
     flex-direction: column;
-    font-size: 40px;
+    font-size: 35px;
     font-style: italic;
     
 }
@@ -121,7 +121,7 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     input{
         width: 110px;
-        text-indent: 0.5rem;
+        text-align: center;
     }
     .inputs{
         justify-content: center;
@@ -140,6 +140,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
     }
     .result{
-        font-size: 31px;
+        font-size: 25px;
     }
 }
